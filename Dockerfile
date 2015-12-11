@@ -17,3 +17,4 @@ RUN wget "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.t
   	&& npm install -g npm@"$NPM_VERSION" \
     && npm install --silent -g forever  source-map-support semver underscore fibers\
   	&& npm cache clear
+ADD . /meteor/src
